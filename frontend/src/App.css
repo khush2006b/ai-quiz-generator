@@ -100,6 +100,8 @@ body {
 .logo-icon {
   font-size: 2.5rem;
   animation: pulse 2s ease-in-out infinite;
+  display: inline-block;
+  filter: drop-shadow(0 0 10px rgba(97, 218, 251, 0.5));
 }
 
 @keyframes pulse {
@@ -136,6 +138,9 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .stats-button:hover:not(:disabled) {
@@ -159,12 +164,26 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .high-scores-button:hover {
   background: rgba(255, 215, 0, 0.2);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.button-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.stats-button:hover:not(:disabled) .button-icon,
+.high-scores-button:hover .button-icon {
+  transform: scale(1.2) rotate(5deg);
 }
 
 .status-indicator {

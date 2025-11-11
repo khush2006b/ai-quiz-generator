@@ -70,7 +70,7 @@ app.post('/api/quiz/generate', async (req, res) => {
     The 'explanation' should be educational and help the user understand the correct answer. [/INST]`;
 
     const response = await hf.chatCompletion({
-      model: 'mistralai/Mixtral-8x7B-Instruct-v0.1',
+      model: 'meta-llama/Llama-3.2-3B-Instruct',
       messages: [{ role: 'user', content: prompt }],
       max_tokens: 2500,
     });

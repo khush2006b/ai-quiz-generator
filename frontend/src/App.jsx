@@ -113,18 +113,20 @@ function App() {
               onClick={() => setShowStats(true)}
               disabled={backendStatus !== 'connected'}
             >
-              📊 Statistics
+              <span className="button-icon">📊</span>
+              Statistics
             </button>
             <button 
               className="high-scores-button" 
               onClick={() => setShowHighScores(true)}
             >
-              🏆 High Scores
+              <span className="button-icon">🏆</span>
+              High Scores
             </button>
             <div className={`status-indicator ${backendStatus}`}>
               <span className="status-dot"></span>
-              {backendStatus === 'connected' ? 'Connected' : 
-               backendStatus === 'disconnected' ? 'Disconnected' : 'Checking...'}
+              {backendStatus === 'connected' ? '✅ Connected' : 
+               backendStatus === 'disconnected' ? '❌ Disconnected' : '🔄 Checking...'}
             </div>
           </div>
         </div>

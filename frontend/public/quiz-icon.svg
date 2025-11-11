@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4fb3d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" stroke="url(#brainGradient)" stroke-width="3"/>
+  
+  <!-- Brain Shape -->
+  <g fill="url(#brainGradient)">
+    <!-- Left hemisphere -->
+    <path d="M 60 70 Q 45 70 40 85 Q 35 100 40 115 Q 45 130 60 130 Q 70 130 75 120 Q 78 110 75 100 Q 72 90 70 80 Q 68 70 60 70 Z"/>
+    
+    <!-- Right hemisphere -->
+    <path d="M 140 70 Q 155 70 160 85 Q 165 100 160 115 Q 155 130 140 130 Q 130 130 125 120 Q 122 110 125 100 Q 128 90 130 80 Q 132 70 140 70 Z"/>
+    
+    <!-- Center connection -->
+    <ellipse cx="100" cy="100" rx="15" ry="35" opacity="0.7"/>
+    
+    <!-- Brain details (folds) -->
+    <path d="M 55 85 Q 60 88 65 85" stroke="url(#brainGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 55 100 Q 60 103 65 100" stroke="url(#brainGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 55 115 Q 60 118 65 115" stroke="url(#brainGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+    
+    <path d="M 135 85 Q 140 88 145 85" stroke="url(#brainGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 135 100 Q 140 103 145 100" stroke="url(#brainGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 135 115 Q 140 118 145 115" stroke="url(#brainGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Question mark overlay -->
+  <text x="100" y="170" font-size="40" font-weight="bold" fill="#61dafb" text-anchor="middle" font-family="Arial, sans-serif">?</text>
+</svg>
