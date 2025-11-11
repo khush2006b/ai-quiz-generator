@@ -102,7 +102,7 @@ function App() {
       <div className="app-container">
         <div className="app-header">
           <h1>
-            <span className="logo-icon">🧠</span>
+            <span className="logo-icon">✨</span>
             AI Quiz Generator
           </h1>
           <p className="subtitle">Test your knowledge with AI-powered quizzes</p>
