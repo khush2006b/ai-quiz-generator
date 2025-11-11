@@ -2,6 +2,10 @@
 
 An interactive quiz application powered by AI that generates custom quizzes on any topic using Hugging Face's Mixtral AI model. Features a modern UI with difficulty levels, quiz history tracking, and real-time statistics.
 
+## 🔗 Live Demo
+**Frontend**: [https://ai-quiz-generator-peed.onrender.com](https://ai-quiz-generator-peed.onrender.com)  
+**Backend API**: [https://ai-quiz-generator-jcho.onrender.com](https://ai-quiz-generator-jcho.onrender.com)
+
 ![AI Quiz Generator](https://img.shields.io/badge/React-19.1.1-61dafb?style=for-the-badge&logo=react)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js)
 ![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)
